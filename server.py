@@ -9,3 +9,6 @@ def get_data(ticker: str):
     headers = {"User-Agent": "Mozilla/5.0"}
     res = requests.get(url, headers=headers)
     return res.json()
+@app.get("/")
+def home():
+    return {"message": "Backend is running 🚀"}
