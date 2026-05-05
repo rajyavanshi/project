@@ -498,8 +498,7 @@ function arR2(series) {
 async function fetchData(ticker) {
   async function fetchData(ticker) {
     // 🔥 LOCAL BACKEND (change later for deployment)
-    const base = `http://127.0.0.1:8000/api/data/${encodeURIComponent(ticker)}`;
-
+    const base = `https://project-h1b5.onrender.com/api/data/${ticker}`;
     let j = null;
 
     try {
